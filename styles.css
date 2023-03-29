@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+}
+
+#background-image {
+  background-image: url('assets/bgImage.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+}
+
+#header-bar {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 96px;
+  padding: 0px 40px;
+}
+
+#header-bar-left {
+  display: flex;
+  align-items: center;
+}
+
+#header-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+#burger-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#burger-menu-icon {
+  height: 15px;
+  width: 19px;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96px;
+
+}
+
+#uber-eats-logo {
+  margin-left: 32px;
+  height: 24px;
+  width: 134;
+}
+
+#login-button-container {
+position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-button {
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  padding: 14px 20px 14px 37px;
+  border-radius: 80px;;
+  width: 110px;
+}
+
+#login-icon {
+  position: absolute;
+  height: 17px;
+  left: 15px;
+  top: 13px;
+}
+
+#signup-button-container {
+  margin-left: 16px;
+}
+
+#signup-button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 14px 7px;
+  border-radius: 80px;;
+  width: 100px;
+}
