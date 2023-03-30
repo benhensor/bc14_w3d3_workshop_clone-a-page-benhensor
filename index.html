@@ -8,31 +8,44 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="background-image">
+    <div id="background-image"></div>
+    <div id="content">
       <div id="header-bar">
-        <div id="header-bar-left">
-          <div id="burger-menu-container">
-            <img id="burger-menu-icon" src="/assets/icons/burger-menu-icon.png">
-          </div>
-          <div id="logo-container">
-            <img id="uber-eats-logo" src="/assets/uber-eats-logo.png">
-          </div>
-        </div>
-        <div id="header-bar-right">
-          <div class="header-bar-element">
-            <div id="login-button-container">
-              <img id="login-icon" src="/assets/icons/login-icon.png">
-              <button id="login-button">Log in</button>
+        <div id="header-bar-elements-container">
+          <div id="header-bar-left">
+            <div id="burger-menu-container">
+              <img id="burger-menu-icon" src="/assets/icons/burger-menu-icon.png">
+            </div>
+            <div id="logo-container">
+              <img id="uber-eats-logo" src="/assets/uber-eats-logo.png">
             </div>
           </div>
-          <div class="header-bar-element">
-            <div id="signup-button-container">
-              <button id="signup-button">Sign up</button>
+          <div id="header-bar-right">
+            <div class="header-bar-element">
+              <div id="login-button-container">
+                <img id="login-icon" src="/assets/icons/login-icon.png">
+                <button id="login-button">Log in</button>
+              </div>
+            </div>
+            <div class="header-bar-element">
+              <div id="signup-button-container">
+                <button id="signup-button">Sign up</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
+    <div id="search-food-container">
+      <h1>Order food to your door</h1>
+      <input id="enter-address-bar" type="text" placeholder="Enter delivery address">
+      <label for="delivery-options"></label>
+      <select name="delivery-options" id="delivery-options">
+        <option value="deliver-now">Deliver now</option>
+        <option value="schedule-for-later">Schedule for later</option>
+      </select>
+      <button id="find-food-button">Find Food</button>
+    </div>
+  <script src="main.js"></script>
 </body>
 </html>

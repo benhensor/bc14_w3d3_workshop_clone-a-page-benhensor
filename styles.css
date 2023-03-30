@@ -1,24 +1,38 @@
 body {
   margin: 0;
+  font-family: sans-serif;
+  height: 3000px;
 }
 
 #background-image {
   background-image: url('assets/bgImage.png');
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: center;
   background-size: cover;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  left: 0;
+  height: 100vh;
+}
+
+#content {
+  padding: 50px;
+}
+
+/* Change background-attachment when user scrolls */
+.scrolled #background-image {
+  background-attachment: scroll;
 }
 
 #header-bar {
+  position: fixed;
   top: 0;
+  left: 0;
+  height: 96px;
+  width: 100%;
+}
+
+#header-bar-elements-container {
   display: flex;
   justify-content: space-between;
-  height: 96px;
   padding: 0px 40px;
 }
 
@@ -41,6 +55,7 @@ body {
 #burger-menu-icon {
   height: 15px;
   width: 19px;
+  cursor: pointer;
 }
 
 #logo-container {
@@ -48,36 +63,44 @@ body {
   justify-content: center;
   align-items: center;
   height: 96px;
-
 }
 
 #uber-eats-logo {
   margin-left: 32px;
   height: 24px;
   width: 134;
+  cursor: pointer;
 }
 
 #login-button-container {
-position: relative;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 96px;
 }
 
 #login-button {
+  height: 50px;
   border: none;
   background-color: white;
   font-size: 16px;
   padding: 14px 20px 14px 37px;
-  border-radius: 80px;;
-  width: 110px;
+  border-radius: 25px;;
+  width: 105px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#login-button:hover {
+  background-color: rgb(200, 200, 200);
 }
 
 #login-icon {
   position: absolute;
   height: 17px;
-  left: 15px;
-  top: 13px;
+  left: 18px;
+  top: 38px;
 }
 
 #signup-button-container {
@@ -85,11 +108,22 @@ position: relative;
 }
 
 #signup-button {
+  height: 50px;
   border: none;
   background-color: black;
   color: white;
   font-size: 16px;
   padding: 14px 7px;
-  border-radius: 80px;;
+  border-radius: 25px;;
   width: 100px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#signup-button:hover {
+  background-color: rgb(90, 90, 90);
+}
+
+h1 {
+  font-size: 50px;
 }
